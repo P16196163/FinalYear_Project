@@ -4,13 +4,16 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:CoachAid"
+             xmlns:core="clr-namespace:CoachAid.Core;assembly=CoachAid.Core"
              mc:Ignorable="d" 
              d:DesignHeight="600" d:DesignWidth="250">
     <UserControl.Template>
         <ControlTemplate TargetType="UserControl">
 
             <!-- Main Background -->
-            <Border Background="{StaticResource ForegroundLightBrush}">
+            <Border Background="{StaticResource ForegroundLightBrush}" DataContext="{x:Static core:SideMenuViewModel.Instance}">
+
+                <Border.BorderThickness>0 0 1 0</Border.BorderThickness>
 
                 <!-- Content-->
                 <Grid>
@@ -23,11 +26,46 @@
                     <!-- Top Menu -->
                     <Grid Height="60" Grid.Row="0" Background="{StaticResource ForegroundMainBrush}">
 
-                       
+                        <!-- Quit to Main menu -->
+                        <Button Style="{StaticResource BaseStyle}" HorizontalAlignment="Right" Width="Auto"
+                                Command="{Binding ExitHomeCommand}">
+                            <Image Source="/CoachAid;component/Images/Exit-icon.png" Width="40"/>
+                        </Button>
 
                     </Grid>
                     
                     <!-- Content -->
+                    <StackPanel Grid.Row="1">
+                        
+                        <!-- New Match -->
+                        <Button Style="{StaticResource BaseStyle}" VerticalAlignment="Top"
+                                Command="{Binding NewMatchCommand}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="New Match" HorizontalAlignment="Left"
+                                           VerticalAlignment="Center"
+                                           FontSize="{StaticResource FontSizeRegular}"
+                                           Margin="0 0 40 0"/>
+                                <Image Source="/CoachAid;component/Images/Rugby-icon.png"
+                                       HorizontalAlignment="Right"
+                                       Width="40"/>
+                            </StackPanel>
+                        </Button>
+
+                        <!-- Previous Matches -->
+                        <Button Style="{StaticResource BaseStyle}" VerticalAlignment="Top"
+                                Command="{Binding PreviousMatchesCommand}">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="Previous Matches" HorizontalAlignment="Left"
+                                           VerticalAlignment="Center"
+                                           FontSize="{StaticResource FontSizeRegular}"
+                                           Margin="0 0 40 0"/>
+                                <Image Source="/CoachAid;component/Images/Rugby-icon.png"
+                                       HorizontalAlignment="Right"
+                                       Width="40"/>
+                            </StackPanel>
+                        </Button>
+
+                    </StackPanel>
 
                 </Grid>
 

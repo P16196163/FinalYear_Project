@@ -12,7 +12,7 @@ namespace CoachAid
     {
         public override object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            //FInd appropriate page
+            //Find appropriate page
             switch ((ApplicationPage)value)
             {
                 case ApplicationPage.Welcome:
@@ -23,6 +23,24 @@ namespace CoachAid
 
                 case ApplicationPage.DBHome:
                     return new DBHomePage();
+
+                case ApplicationPage.DBPLayers:
+                    return new DBPlayersPage();
+
+                case ApplicationPage.DBStats:
+                    return new DBTeamStatsPage();
+
+                case ApplicationPage.DBSelection:
+                    return new DBSelectionPage();
+
+                case ApplicationPage.Player:
+                    return new PlayerPage();
+
+                case ApplicationPage.Match:
+                    return new NewMatchPage();
+
+                case ApplicationPage.PreviousMatch:
+                    return null;
 
                 default:
                     Debugger.Break();

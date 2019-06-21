@@ -27,7 +27,7 @@
                                    FontSize="{StaticResource FontSizeLarge}"
                                    Margin="10 20"/>
 
-                        <Button Content="New Database" Command="{Binding NewDBCommand}"/>
+                        <Button x:Name="NewDB" Content="New Database" Command="{Binding NewDBCommand}" Click="NewDB_Click"/>
                         <Button Content="Load Database"/>
                         <Button Content="Options" Command="{Binding OptionsCommand}"/>
                         <Button Content="Aloha Moe"/>

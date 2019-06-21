@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\David Nurse\source\repos\CoachAid\CoachAid\App.xaml
-10-724476631
+221194063767
 
-29-2100263398
+4334949252
 16237157161
-Controls\SideMenuControl.xaml;Controls\TopMenuControl.xaml;MainWindow.xaml;Pages\OptionsPage.xaml;Pages\DBHomePage.xaml;Pages\WelcomePage.xaml;Styles\Buttons.xaml;Styles\Colours.xaml;Styles\Fonts.xaml;Styles\Texts.xaml;
+NewTeamWindow.xaml;AddPlayerWindow.xaml;Controls\SelectionList\SelectionListSubsControl.xaml;Controls\SelectionList\SelectionListControl.xaml;Controls\SelectionList\SelectionListItemControl .xaml;Controls\PlayerList\PlayerListItemControl .xaml;Controls\PlayerList\PlayerListControl.xaml;Controls\SideMenuControl.xaml;Controls\TopMenuControl.xaml;MainWindow.xaml;Pages\NewMatchPage.xaml;Pages\DBTeamStatsPage.xaml;Pages\PlayerPage.xaml;Pages\DBSelectionPage.xaml;Pages\DBPlayersPage.xaml;Pages\OptionsPage.xaml;Pages\DBHomePage.xaml;Pages\WelcomePage.xaml;Styles\Buttons.xaml;Styles\Colours.xaml;Styles\Fonts.xaml;Styles\Texts.xaml;
 
 False
 

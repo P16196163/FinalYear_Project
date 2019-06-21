@@ -37,6 +37,7 @@
     <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
       <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationFramework" />
     <Reference Include="PropertyChanged, Version=2.6.0.0, Culture=neutral, PublicKeyToken=ee3ee20bcf148ddd, processorArchitecture=MSIL">
       <HintPath>..\packages\PropertyChanged.Fody.2.6.0\lib\net452\PropertyChanged.dll</HintPath>
     </Reference>
@@ -51,18 +52,36 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataModels\ApplicationPage.cs" />
+    <Compile Include="DataModels\PlayerDataModel.cs" />
+    <Compile Include="DataModels\Position.cs" />
     <Compile Include="Expressions\ExpressionHelpers.cs" />
     <Compile Include="IoC\IoC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\NewMatchPageViewModel.cs" />
+    <Compile Include="ViewModels\DBTeamStatsPageViewModel.cs" />
+    <Compile Include="ViewModels\DBSelectionPageViewModel.cs" />
+    <Compile Include="ViewModels\PlayerPageViewModel.cs" />
+    <Compile Include="ViewModels\DBPlayersViewModel.cs" />
+    <Compile Include="ViewModels\Design\SelectionList\SelectionListDesignModel.cs" />
+    <Compile Include="ViewModels\Design\SelectionList\SelectionListItemDesignModel.cs" />
+    <Compile Include="ViewModels\SelectionList\SelectionListItemViewModel.cs" />
+    <Compile Include="ViewModels\SelectionList\SelectionListViewModel.cs" />
+    <Compile Include="ViewModels\SideMenuViewModel.cs" />
+    <Compile Include="ViewModels\TopMenuViewModel.cs" />
     <Compile Include="ViewModels\ApplicationViewModel.cs" />
     <Compile Include="ViewModels\Base\BaseViewModel.cs" />
     <Compile Include="ViewModels\Base\RelayCommand.cs" />
     <Compile Include="ViewModels\DBHomePageViewModel.cs" />
+    <Compile Include="ViewModels\Design\PlayerList\PlayerListDesignModel.cs" />
+    <Compile Include="ViewModels\Design\PlayerList\PlayerListItemDesignModel.cs" />
+    <Compile Include="ViewModels\PlayerList\PlayerListItemViewModel.cs" />
+    <Compile Include="ViewModels\PlayerList\PlayerListViewModel.cs" />
     <Compile Include="ViewModels\WelcomePageViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.3.3.2\build\Fody.targets" Condition="Exists('..\packages\Fody.3.3.2\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

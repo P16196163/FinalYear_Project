@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="CoachAid.SelectionListItemControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CoachAid"
+             xmlns:core="clr-namespace:CoachAid.Core;assembly=CoachAid.Core"
+             mc:Ignorable="d" 
+             d:DesignHeight="30" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <Style x:Key="ContentStyle" TargetType="{x:Type ContentControl}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ContentControl}">
+
+                        <Border x:Name="background" Background="{Binding Position, Converter={local:PositionToBrushConverter}}">
+                            <Grid x:Name="Container"  Background="Transparent" Width="Auto" Height="Auto"> 
+                                <Grid.ColumnDefinitions>
+                                    <!-- Number-->
+                                    <ColumnDefinition Width=".5*" />
+                                    <!-- Position-->
+                                    <ColumnDefinition Width="*" />
+                                    <!-- Name-->
+                                    <ColumnDefinition Width="2*" />
+                                    <!-- Average Rating-->
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <!-- Number -->
+                                <Border Grid.Column="0" Margin="0">
+                                    <TextBlock Text="{Binding Number}" 
+                                               Style="{StaticResource PlayerItemContentText}"/>
+                                </Border>
+
+
+                                <!-- Position -->
+                                <Border Grid.Column="1" Margin="0">
+                                    <TextBlock Grid.Column="2" Text="{Binding Position, Converter={local:PositionToStringConverter}}"
+                                           Style="{StaticResource PlayerItemContentText}"/>
+                                </Border>
+
+                                <!-- Name -->
+                                <Border Grid.Column="2" Margin="0">
+                                    <TextBlock Text="{Binding Name}" 
+                                               Style="{StaticResource PlayerItemNameText}"/>
+                                </Border>
+
+                                <!-- Average Rating -->
+                                <Border Grid.Column="3" Margin="0">
+                                    <TextBlock Grid.Column="6" Text="{Binding AvgRating}"
+                                           Style="{StaticResource PlayerItemContentText}"/>
+                                </Border>
+                            </Grid>
+                        </Border>
+
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <ContentControl d:DataContext="{x:Static core:SelectionListItemDesignModel.Instance}" 
+                    Style="{StaticResource ContentStyle}"/>
+
+</UserControl>

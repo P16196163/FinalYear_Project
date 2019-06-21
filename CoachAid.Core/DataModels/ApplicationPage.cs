@@ -21,8 +21,33 @@
         DBHome = 2,
 
         /// <summary>
-        /// The page for a new match
+        /// The page featuring a list of all team players
         /// </summary>
-        Match = 3,
+        DBPLayers = 3,
+
+        /// <summary>
+        /// The page featuring the stats for the team
+        /// </summary>
+        DBStats = 4,
+
+        /// <summary>
+        /// The page showing the best possible team selection
+        /// </summary>
+        DBSelection = 5,
+
+        /// <summary>
+        /// The page for a player
+        /// </summary>
+        Player = 6,
+
+        /// <summary>
+        /// The page to add stats for a New Match
+        /// </summary>
+        Match = 7,
+
+        /// <summary>
+        /// The page to view old Matches
+        /// </summary>
+        PreviousMatch = 8,
     }
 }

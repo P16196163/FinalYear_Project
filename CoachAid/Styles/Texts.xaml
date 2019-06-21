@@ -108,4 +108,21 @@
         </Style.Triggers>
     </Style>
 
+    <Style TargetType="{x:Type TextBlock}" x:Key="PlayerItemContentText" BasedOn="{StaticResource BaseTextBlockStyle}">
+        <Setter Property="Foreground" Value="{StaticResource ForegroundVeryDarkBrush}"/>
+        <Setter Property="FontSize" Value="{StaticResource FontSizeMedium}"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="Padding" Value="4 2 4 0"/>
+    </Style>
+
+    <Style TargetType="{x:Type TextBlock}" x:Key="PlayerItemNameText" BasedOn="{StaticResource PlayerItemContentText}">
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+    </Style>
+
+    <Style TargetType="{x:Type TextBlock}" x:Key="PlayerItemHeaderText" BasedOn="{StaticResource PlayerItemContentText}">
+        <Setter Property="Foreground" Value="{StaticResource ForegroundLightBrush}"/>
+    </Style>
+
 </ResourceDictionary>

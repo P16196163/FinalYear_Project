@@ -9,13 +9,153 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="DBHomePage">
 
-    <Border Background="Transparent">
+    <ScrollViewer Background="Transparent"
+                  VerticalScrollBarVisibility="Auto">
 
-        <Grid>
-            <Button Content="Remove Menus" Command="{Binding RemoveMenuCommand}"/>
-        </Grid>
+        <Border Background="Transparent"
+                Margin="5">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Header -->
+                <Border Grid.Row="0"
+                    Background="Black"
+                    Grid.ColumnSpan="3">
+                    <TextBlock Text="De Montfort University"
+                       Foreground="Red"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       FontSize="{StaticResource FontSizeLarge}"
+                       Padding="20 10"/>
+                </Border>
+
+                <!-- Results -->
+                <Grid Grid.Row="1" Margin="20 20">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <Border Grid.Row="0"
+                        Padding="5"
+                        Background="{StaticResource ForegroundMainBrush}">
+                        <TextBlock Text="Recent Results"
+                               HorizontalAlignment="Center"
+                               FontSize="{StaticResource FontSizeRegular}"
+                               Foreground="{StaticResource ForegroundLightBrush}"/>
+                    </Border>
+
+                    <ListView Grid.Row="1"
+                          HorizontalContentAlignment="Center">
+                        <ListViewItem>
+                            <TextBlock Text="De Montfort University 3 - 50 University of Leicester"/>
+                        </ListViewItem>
+                        <ListViewItem>
+                            <TextBlock Text="De Montfort University 32 - 12 Aston University"/>
+                        </ListViewItem>
+                        <ListViewItem>
+                            <TextBlock Text="Oxford Brookes 2nd XV 22 - 26 De Montfort University"/>
+                        </ListViewItem>
+                    </ListView>
+                </Grid>
+
+                <!-- Fixtures -->
+                <Grid Grid.Row="2" Margin="20 20">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <Border Grid.Row="0"
+                        Padding="5"
+                        Background="{StaticResource ForegroundMainBrush}">
+                        <TextBlock Text="Upcoming Fixtures"
+                               HorizontalAlignment="Center"
+                               FontSize="{StaticResource FontSizeRegular}"
+                               Foreground="{StaticResource ForegroundLightBrush}"/>
+                    </Border>
+
+                    <ListView Grid.Row="1"
+                          HorizontalContentAlignment="Center">
+                        <ListViewItem>
+                            <TextBlock Text="Aston University VS De Montfort University"/>
+                        </ListViewItem>
+                        <ListViewItem>
+                            <TextBlock Text="De Montfort University VS University of Birmingham"/>
+                        </ListViewItem>
+                    </ListView>
+                </Grid>
+
+                <!-- Competition List -->
+                <Grid Grid.Row="1" Grid.Column="2" Margin="20 20" HorizontalAlignment="Right">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <Border Grid.Row="0"
+                        Padding="5"
+                        Background="{StaticResource ForegroundMainBrush}">
+                        <TextBlock Text="Competitions"
+                               HorizontalAlignment="Center"
+                               FontSize="{StaticResource FontSizeRegular}"
+                               Foreground="{StaticResource ForegroundLightBrush}"/>
+                    </Border>
+
+                    <ListView Grid.Row="1"
+                          HorizontalContentAlignment="Center">
+                        <ListViewItem>
+                            <TextBlock Text="BUCS Midlands 2B"/>
+                        </ListViewItem>
+                        <ListViewItem>
+                            <TextBlock Text="BUCS Midlands Conference Cup"/>
+                        </ListViewItem>
+                        <ListViewItem>
+                            <TextBlock Text="Varsity"/>
+                        </ListViewItem>
+                    </ListView>
+                </Grid>
+
+                <!-- Top Players -->
+                <Grid Grid.Row="3" 
+                  Grid.ColumnSpan="2"
+                  Margin="20 20">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+
+                    <Border Grid.Row="0"
+                        Padding="5"
+                        Background="{StaticResource ForegroundMainBrush}">
+                        <TextBlock Text="Top 5 Players"
+                               HorizontalAlignment="Center"
+                               FontSize="{StaticResource FontSizeRegular}"
+                               Foreground="{StaticResource ForegroundLightBrush}"/>
+                    </Border>
+
+                    <local:PlayerListControl Grid.Row="1"/>
+                </Grid>
+
+            </Grid>
+
+        </Border>
         
-  
-    </Border>
+    </ScrollViewer>
     
 </local:BasePage>

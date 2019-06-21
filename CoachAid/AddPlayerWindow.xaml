@@ -1,0 +1,301 @@
+﻿<Window x:Class="CoachAid.AddPlayerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoachAid"
+        mc:Ignorable="d"
+        Title="Add New Player" Height="450" Width="400">
+    <Border Padding="20 10">
+        <Grid>
+            <Grid.RowDefinitions>
+                <!-- Picture -->
+                <RowDefinition Height="*"/>
+                <!-- Name -->
+                <RowDefinition Height="Auto"/>
+                <!-- Position/Age/Nationality/Height/Weight -->
+                <RowDefinition Height="Auto"/>
+                <!-- Buttons -->
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            
+            <!-- Picture -->
+            
+            <!-- Name -->
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0"
+                            Margin="5">
+                    <TextBlock Text="First Name" />
+                    <TextBox x:Name="FirstNameTB" Text="New"
+                             Padding="2"
+                             FontSize="{StaticResource FontSizeSmall}"/>
+                </StackPanel>
+                <StackPanel Grid.Column="1"
+                            Margin="5">
+                    <TextBlock Text="Last Name" />
+                    <TextBox x:Name="LastNameTB" Text="Player"
+                             Padding="2"
+                             FontSize="{StaticResource FontSizeSmall}"/>
+                </StackPanel>
+            </Grid>
+
+            <!-- Position/Age/Nationality/Height/Weight -->
+            <Grid Grid.Row="2">
+                <Grid.RowDefinitions>
+                    <!-- Position -->
+                    <RowDefinition />
+                    <!-- Nationality -->
+                    <RowDefinition />
+                    <!-- Age -->
+                    <RowDefinition />
+                    <!-- Height -->
+                    <RowDefinition />
+                    <!-- Weight -->
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+
+                <!-- Position -->
+                <Border Grid.Row="0" Margin="5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Grid.Column="0"
+                           Text="Position:" 
+                           Margin="0 0 40 0"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"/>
+                        <ComboBox Grid.Column="1" 
+                          x:Name="PositionCombo" SelectedIndex="0"
+                          Width="150"
+                          HorizontalContentAlignment="Center">
+                            <ComboBoxItem>Prop</ComboBoxItem>
+                            <ComboBoxItem>Lock</ComboBoxItem>
+                            <ComboBoxItem>Flanker</ComboBoxItem>
+                            <ComboBoxItem>Number 8</ComboBoxItem>
+                            <ComboBoxItem>Scrum Half</ComboBoxItem>
+                            <ComboBoxItem>Fly Half</ComboBoxItem>
+                            <ComboBoxItem>Centre</ComboBoxItem>
+                            <ComboBoxItem>Wing</ComboBoxItem>
+                            <ComboBoxItem>Fullback</ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+                </Border>
+                
+                <!-- Nationality -->
+                <Border Grid.Row="1" Margin="5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0"
+                           Text="Nationality:" 
+                           Margin="0 0 40 0"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"/>
+                        <ComboBox Grid.Column="1"
+                                  x:Name="NationalityCombo" SelectedIndex="0"
+                                  Width="150"
+                                  HorizontalContentAlignment="Center"
+                                  VerticalContentAlignment="Center">
+                            <ComboBoxItem>
+                                <StackPanel Orientation="Horizontal"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center">
+                                    <Border Width="30">
+                                        <Image Source="/CoachAid;component/Images/Flags/ENGFLag.png" 
+                                               Height="22.5"/>
+                                    </Border>
+                                    <TextBlock Text="English" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <StackPanel Orientation="Horizontal"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center">
+                                    <Border Width="30">
+                                        <Image Source="/CoachAid;component/Images/Flags/WALFLag.png" 
+                                               Height="22.5"/>
+                                    </Border>
+                                    <TextBlock Text="Welsh" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <StackPanel Orientation="Horizontal"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center">
+                                    <Border Width="30">
+                                        <Image Source="/CoachAid;component/Images/Flags/SCOFLag.png" 
+                                               Height="22.5"/>
+                                    </Border>
+                                    <TextBlock Text="Scottish" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <StackPanel Orientation="Horizontal"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center">
+                                    <Border Width="30">
+                                        <Image Source="/CoachAid;component/Images/Flags/IREFLag.png" 
+                                               Height="22.5"/>
+                                    </Border>
+                                    <TextBlock Text="Irish" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <StackPanel Orientation="Horizontal"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center">
+                                    <Border Width="30">
+                                        <Image Source="/CoachAid;component/Images/Flags/NZLFLag.png" 
+                                               Height="22.5"/>
+                                    </Border>
+                                    <TextBlock Text="New Zealander" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <StackPanel Orientation="Horizontal"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center">
+                                    <Border Width="30">
+                                        <Image Source="/CoachAid;component/Images/Flags/AUSFLag.png" 
+                                               Height="22.5"/>
+                                    </Border>
+                                    <TextBlock Text="Australian" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <StackPanel Orientation="Horizontal"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center">
+                                    <Border Width="30">
+                                        <Image Source="/CoachAid;component/Images/Flags/RSAFLag.png" 
+                                               Height="22.5"/>
+                                    </Border>
+                                    <TextBlock Text="South Africa" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <StackPanel Orientation="Horizontal"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center">
+                                    <Border Width="30">
+                                        <Image Source="/CoachAid;component/Images/Flags/FRAFLag.png" 
+                                               Height="22.5"/>
+                                    </Border>
+                                    <TextBlock Text="French" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <StackPanel Orientation="Horizontal"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center">
+                                    <Border Width="30">
+                                        <Image Source="/CoachAid;component/Images/Flags/ARGFLag.png" 
+                                               Height="22.5"/>
+                                    </Border>
+                                    <TextBlock Text="Argentinian" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </ComboBoxItem>
+                        </ComboBox>
+                    </Grid>
+                </Border>
+
+                <!-- Age -->
+                <Border Grid.Row="2" Margin="5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0"
+                           Text="Age:" 
+                           Margin="0 0 40 0"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"/>
+                        <TextBox Grid.Column="1"
+                                 x:Name="AgeTB"
+                                 Padding="2"
+                                 FontSize="{StaticResource FontSizeSmall}"
+                                 MaxLength="2"
+                                 HorizontalAlignment="Right"
+                                 Width="40"/>
+
+                    </Grid>
+                </Border>
+
+                <!-- Height -->
+                <Border Grid.Row="3" Margin="5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0"
+                           Text="Height:" 
+                           Margin="0 0 40 0"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"/>
+                        <TextBox Grid.Column="1"
+                                 x:Name="HeightTB"
+                                 Padding="2"
+                                 FontSize="{StaticResource FontSizeSmall}"
+                                 MaxLength="3"
+                                 HorizontalAlignment="Right"
+                                 Width="40"/>
+                        <TextBlock Grid.Column="2" Text="cm"
+                                   VerticalAlignment="Center"
+                                   Margin="2 0"/>
+
+                    </Grid>
+                </Border>
+
+                <!-- Weight -->
+                <Border Grid.Row="4" Margin="5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Grid.Column="0"
+                           Text="Weight:" 
+                           Margin="0 0 40 0"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"/>
+                        <TextBox Grid.Column="1"
+                                 x:Name="WeightTB"
+                                 Padding="2"
+                                 FontSize="{StaticResource FontSizeSmall}"
+                                 MaxLength="3"
+                                 HorizontalAlignment="Right"
+                                 Width="40"/>
+                        <TextBlock Grid.Column="2" Text="kg"
+                                   VerticalAlignment="Center"
+                                   Margin="2 0"/>
+
+                    </Grid>
+                </Border>
+            </Grid>
+
+            <StackPanel Grid.Row="3" Orientation="Horizontal"
+                        HorizontalAlignment="Center">
+                <Button Content="Confirm" Style="{StaticResource BaseStyle}"
+                        Margin="4 4" Padding="8 2"/>
+                <Button Content="Reset" Style="{StaticResource BaseStyle}"
+                        Margin="2 4" Padding="8 2"/>
+                <Button Content="Cancel" Style="{StaticResource BaseStyle}"
+                        Margin="2 4" Padding="8 2"/>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

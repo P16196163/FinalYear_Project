@@ -34,3 +34,27 @@ C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Controls\TopMenuCo
 C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Controls\TopMenuControl.baml
 C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Controls\SideMenuControl.g.cs
 C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Controls\SideMenuControl.baml
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Controls\PlayerList\PlayerListItemControl .g.cs
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Controls\PlayerList\PlayerListControl.g.cs
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Controls\PlayerList\PlayerListItemControl .baml
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Controls\PlayerList\PlayerListControl.baml
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Pages\DBPlayersPage.g.cs
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Pages\DBPlayersPage.baml
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Pages\DBSelectionPage.g.cs
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Pages\DBSelectionPage.baml
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Controls\SelectionList\SelectionListControl.g.cs
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Controls\SelectionList\SelectionListItemControl .g.cs
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Controls\SelectionList\SelectionListControl.baml
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Controls\SelectionList\SelectionListItemControl .baml
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Controls\SelectionList\SelectionListSubsControl.g.cs
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Controls\SelectionList\SelectionListSubsControl.baml
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Pages\PlayerPage.g.cs
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Pages\PlayerPage.baml
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Pages\DBTeamStatsPage.g.cs
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Pages\DBTeamStatsPage.baml
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\AddPlayerWindow.g.cs
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\AddPlayerWindow.baml
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\NewTeamWindow.g.cs
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\NewTeamWindow.baml
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Pages\NewMatchPage.g.cs
+C:\Users\David Nurse\source\repos\CoachAid\CoachAid\obj\Debug\Pages\NewMatchPage.baml

@@ -24,7 +24,7 @@ namespace CoachAid
             // Show the main window
             Current.MainWindow = new MainWindow();
             Current.MainWindow.Show();
-
+            
         }
 
     }

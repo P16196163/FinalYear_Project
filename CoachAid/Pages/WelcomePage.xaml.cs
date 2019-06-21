@@ -11,5 +11,12 @@ namespace CoachAid
         {
             InitializeComponent();
         }
+
+        private void NewDB_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            NewTeamWindow NewTeam = new NewTeamWindow();
+
+            NewTeam.Show();
+        }
     }
 }

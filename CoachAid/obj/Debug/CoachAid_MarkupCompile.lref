@@ -1,8 +1,20 @@
 ﻿
 FC:\Users\David Nurse\source\repos\CoachAid\CoachAid\App.xaml;;
+FC:\Users\David Nurse\source\repos\CoachAid\CoachAid\NewTeamWindow.xaml;;
+FC:\Users\David Nurse\source\repos\CoachAid\CoachAid\AddPlayerWindow.xaml;;
+FC:\Users\David Nurse\source\repos\CoachAid\CoachAid\Controls\SelectionList\SelectionListSubsControl.xaml;;
+FC:\Users\David Nurse\source\repos\CoachAid\CoachAid\Controls\SelectionList\SelectionListControl.xaml;;
+FC:\Users\David Nurse\source\repos\CoachAid\CoachAid\Controls\SelectionList\SelectionListItemControl .xaml;;
+FC:\Users\David Nurse\source\repos\CoachAid\CoachAid\Controls\PlayerList\PlayerListItemControl .xaml;;
+FC:\Users\David Nurse\source\repos\CoachAid\CoachAid\Controls\PlayerList\PlayerListControl.xaml;;
 FC:\Users\David Nurse\source\repos\CoachAid\CoachAid\Controls\SideMenuControl.xaml;;
 FC:\Users\David Nurse\source\repos\CoachAid\CoachAid\Controls\TopMenuControl.xaml;;
 FC:\Users\David Nurse\source\repos\CoachAid\CoachAid\MainWindow.xaml;;
+FC:\Users\David Nurse\source\repos\CoachAid\CoachAid\Pages\NewMatchPage.xaml;;
+FC:\Users\David Nurse\source\repos\CoachAid\CoachAid\Pages\DBTeamStatsPage.xaml;;
+FC:\Users\David Nurse\source\repos\CoachAid\CoachAid\Pages\PlayerPage.xaml;;
+FC:\Users\David Nurse\source\repos\CoachAid\CoachAid\Pages\DBSelectionPage.xaml;;
+FC:\Users\David Nurse\source\repos\CoachAid\CoachAid\Pages\DBPlayersPage.xaml;;
 FC:\Users\David Nurse\source\repos\CoachAid\CoachAid\Pages\OptionsPage.xaml;;
 FC:\Users\David Nurse\source\repos\CoachAid\CoachAid\Pages\DBHomePage.xaml;;
 FC:\Users\David Nurse\source\repos\CoachAid\CoachAid\Pages\WelcomePage.xaml;;

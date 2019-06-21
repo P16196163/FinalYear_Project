@@ -6,7 +6,7 @@ using CoachAid.Core;
 namespace CoachAid
 {
     /// <summary>
-    /// Converts the <see cref="TopMenuVisibility"/> to height
+    /// Converts a boolean value to height
     /// </summary>
     public class BooleanToHeightConverter : BaseValueConverter<BooleanToHeightConverter>
     {

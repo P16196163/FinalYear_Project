@@ -4,13 +4,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:CoachAid"
+             xmlns:core="clr-namespace:CoachAid.Core;assembly=CoachAid.Core"
              mc:Ignorable="d" 
              d:DesignHeight="60" d:DesignWidth="800">
-    <UserControl.Template>
+    <UserControl.Template >
         <ControlTemplate TargetType="UserControl">
 
             <!-- Main Background -->
-            <Border Background="{StaticResource ForegroundLightBrush}">
+            <Border Background="{StaticResource ForegroundLightBrush}" DataContext="{x:Static core:TopMenuViewModel.Instance}">
 
                 <!-- Content-->
                 
@@ -25,10 +26,10 @@
 
                         <!-- Main Buttons-->
                         <StackPanel Grid.Column="1" Orientation="Horizontal">
-                            <Button Style="{StaticResource IconButton}" Content="Home"/>
-                            <Button Style="{StaticResource IconButton}" Content="Players"/>
-                            <Button Style="{StaticResource IconButton}" Content="Team Stats"/>
-                            <Button Style="{StaticResource IconButton}" Content="Team Selection"/>
+                            <Button Style="{StaticResource IconButton}" Content="Home" Command="{Binding DBHomeCommand}"/>
+                            <Button Style="{StaticResource IconButton}" Content="Players" Command="{Binding DBPlayersCommand}"/>
+                            <Button Style="{StaticResource IconButton}" Content="Team Stats" Command="{Binding DBStatsCommand}"/>
+                            <Button Style="{StaticResource IconButton}" Content="Team Selection" Command="{Binding DBSelectionCommand}"/>
                         </StackPanel>
 
                     </Grid>

@@ -12,6 +12,8 @@ namespace CoachAid
             InitializeComponent();
 
             DataContext = new WindowViewModel(this);
+
         }
+
     }
 }
